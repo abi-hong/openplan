@@ -1,0 +1,53 @@
+.resultPageBackground {
+  background: linear-gradient(to bottom, #e0e0e0, #f0f0f0); /* Result 페이지 전용 그라데이션 */
+}
+
+.image {
+  width: 300px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infoCard {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.infoItem {
+  margin-bottom: 1em;
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.infoLabel {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.infoValue {
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+.text { /* "결과 없음" 또는 "잘못된 데이터" 메시지용 */
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  text-decoration: underline;
+  word-break: break-all; /* 긴 URL 줄바꿈 허용 */
+}
+

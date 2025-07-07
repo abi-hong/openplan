@@ -1,0 +1,62 @@
+.button {
+  appearance: none;
+  border-radius: 10px;
+  min-width: 328px;
+  max-width: 200px;
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  font-family: var(--font-geist-sans); /* Assuming this font is available or defined globally */
+  border: 1px solid transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.primary {
+  background: #111111; /* 이미지에 따른 기본 버튼 배경색 */
+  color: #fff; /* 이미지에 따른 기본 버튼 텍스트색 */
+  gap: 8px;
+}
+
+.secondary {
+  background: transparent;
+  border-color: var(--gray-alpha-200); /* page.module.css의 --gray-alpha-200 변수 사용 */
+  min-width: 180px;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background: rgba(17, 17, 17, 0.8); /* 이미지에 따른 호버 버튼 배경색 */
+    border-color: transparent;
+  }
+
+  .secondary:hover {
+    background: #f2f2f2; /* --button-secondary-hover from original page.module.css */
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  .secondary {
+    min-width: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .primary:hover {
+    background: rgba(17, 17, 17, 0.8); /* 동일하게 유지 */
+  }
+}
